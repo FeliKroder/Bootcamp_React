@@ -3,19 +3,38 @@ import "./MainContent.css"; // Import CSS file for MainContent component
 import "./Footer.css"; // Import CSS file for Footer component
 
 function Header() {
-  // Implement your JSX code here
+  return <h1 className="header">Kids dont need Sleep</h1>;
 }
 
 function MainContent() {
-  // Implement your JSX code here
+  return (
+    <p className="main-content">
+      If you ask a kid if it is tired it will tell you: No! I am not tired! If
+      you then ask the kid if it needs some sleep, it will tell you: No! I do
+      not need sleep! I told you, I am not tired!
+    </p>
+  );
 }
 
 function Footer() {
-  // Implement your JSX code here
+  return (
+    <a
+      className="footer"
+      href="https://theconversation.com/why-do-kids-hate-going-to-sleep-while-adults-usually-love-it-160703"
+    >
+      Why do kids hate going to sleep, while adults usually love it?
+    </a>
+  );
 }
 
 function App() {
-  // Render components within App
+  return (
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
