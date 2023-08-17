@@ -4,3 +4,7 @@
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.main-content-answer {
+  color: rgb(252, 0, 0);
+  background-color: rgb(253, 210, 210);
+}

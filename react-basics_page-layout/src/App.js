@@ -8,11 +8,18 @@ function Header() {
 
 function MainContent() {
   return (
-    <p className="main-content">
-      If you ask a kid if it is tired it will tell you: No! I am not tired! If
-      you then ask the kid if it needs some sleep, it will tell you: No! I do
-      not need sleep! I told you, I am not tired!
-    </p>
+    <div className="main-content">
+      <p>
+        If you ask a kid if it is tired it will tell you:{" "}
+        <span className="main-content-answer"> No! I am not tired!</span>
+      </p>
+      <p>
+        If you then ask the kid if it needs some sleep, it will tell you:{" "}
+        <span className="main-content-answer">
+          No! I do not need sleep!!! I told you, I am not tired!!!
+        </span>
+      </p>
+    </div>
   );
 }
 
