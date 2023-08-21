@@ -1,4 +1,4 @@
-export function Navigation({ children }) {
+export default function Navigation({ children }) {
   return (
     <nav>
       {children}
