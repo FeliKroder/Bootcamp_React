@@ -1,3 +1,12 @@
 export function Navigation({ children }) {
-  return <nav>{children}</nav>;
+  return (
+    <nav>
+      {children}
+      <button
+        type="button"
+        onClick={() => console.log("I could toggle a profile!")}
+        aria-label="toggle profile"
+      ></button>
+    </nav>
+  );
 }

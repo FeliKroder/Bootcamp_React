@@ -12,23 +12,11 @@ export default function App() {
       <Header>
         <Logo />
         <Navigation>
-          <Link className="navigation__link" href="#home">
-            Home
-          </Link>
-          <Link className="navigation__link" href="#about">
-            About
-          </Link>
-          <Link className="navigation__link" href="#impressum">
-            Impressum
-          </Link>
+          <Link href="#home">Home</Link>
+          <Link href="#about">About</Link>
+          <Link href="#impressum">Impressum</Link>
         </Navigation>
-        <button
-          type="button"
-          onClick={() => console.log("I could toggle a profile!")}
-          aria-label="toggle profile"
-        >
-          <Avatar />
-        </button>
+        <Avatar />
       </Header>
       <main>content goes here…</main>
     </>
