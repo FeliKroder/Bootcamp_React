@@ -1,3 +1,3 @@
-export function Image({ className, src, alt }) {
-  return <img className={className} src={src} alt={alt}></img>;
+export function Image({ src, alt }) {
+  return <img className="round-image" src={src} alt={alt}></img>;
 }

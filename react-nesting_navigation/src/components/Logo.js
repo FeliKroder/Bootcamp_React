@@ -5,7 +5,7 @@ import { Link } from "./Link.js";
 export function Logo() {
   return (
     <Link href="#">
-      <Image className="round-image" src={logo} alt="logo" />
+      <Image src={logo} alt="logo" />
     </Link>
   );
 }
