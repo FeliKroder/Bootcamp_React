@@ -2,26 +2,27 @@ import "./styles.css";
 
 import avatar from "./img/avatar.jpg";
 import logo from "./img/logo.jpg";
-import Header from "./components/Header.js";
-import Navigation from "./components/Navigation.js";
+import { Header } from "../src/components/Header";
+import { Navigation } from "./components/Navigation.js";
+import { Link } from "./components/Link.js";
 
 export default function App() {
   return (
     <>
       <Header>
-        <a href="#">
+        <Link href="#">
           <img className="round-image" src={logo} alt="logo" />
-        </a>
+        </Link>
         <Navigation>
-          <a className="navigation__link" href="#home">
+          <Link className="navigation__link" href="#home">
             Home
-          </a>
-          <a className="navigation__link" href="#about">
+          </Link>
+          <Link className="navigation__link" href="#about">
             About
-          </a>
-          <a className="navigation__link" href="#impressum">
+          </Link>
+          <Link className="navigation__link" href="#impressum">
             Impressum
-          </a>
+          </Link>
         </Navigation>
         <button
           type="button"
