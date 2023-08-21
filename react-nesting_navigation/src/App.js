@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import avatar from "./img/avatar.jpg";
-import logo from "./img/logo.jpg";
-import { Header } from "../src/components/Header";
+import { Avatar } from "./components/Avatar.js";
+import { Logo } from "./components/Logo.js";
+import { Header } from "../src/components/Header.js";
 import { Navigation } from "./components/Navigation.js";
 import { Link } from "./components/Link.js";
 
@@ -11,7 +11,7 @@ export default function App() {
     <>
       <Header>
         <Link href="#">
-          <img className="round-image" src={logo} alt="logo" />
+          <Logo />
         </Link>
         <Navigation>
           <Link className="navigation__link" href="#home">
@@ -29,7 +29,7 @@ export default function App() {
           onClick={() => console.log("I could toggle a profile!")}
           aria-label="toggle profile"
         >
-          <img className="round-image" src={avatar} alt="avatar" />
+          <Avatar />
         </button>
       </Header>
       <main>content goes here…</main>
