@@ -10,9 +10,7 @@ export default function App() {
   return (
     <>
       <Header>
-        <Link href="#">
-          <Logo />
-        </Link>
+        <Logo />
         <Navigation>
           <Link className="navigation__link" href="#home">
             Home
