@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="app">
       {fruits.map((fruit) => {
-        return <Card key={fruit.id} name={fruit.name} color={fruit.color} />;
+        return <Card name={fruit.name} color={fruit.color} />;
       })}
     </div>
   );
