@@ -1,11 +1,19 @@
 import Card from "./components/Card";
 
 export default function App() {
-  const fruits = [];
+  const fruits = [
+    { name: "🥥 coconut", id: 0, color: "brown" },
+    { name: "🥭 mango", id: 1, color: "orange" },
+    { name: "🥑 Avocado ", id: 2, color: "darkgreen" },
+    { name: "🥝 Kiwi", id: 3, color: "lightgreen" },
+    { name: "🍍 Ananas", id: 4, color: "yellow" },
+  ];
 
   return (
     <div className="app">
-      <Card name="🍌 banana" />
+      {fruits.map((fruit) => {
+        return <Card key={fruit.id} name={fruit.name} color={fruit.color} />;
+      })}
     </div>
   );
 }
