@@ -1,12 +1,33 @@
 import "./StatusCheck.css";
+import { useState } from "react";
 
 const apiStatusUrl = "https://example-apis.vercel.app/api/status";
 
 export default function StatusCheck() {
-  const statusIcon = "⁉️";
+  const [statusIcon, setStatusIcon] = useState("⁉️");
+
   // Something needs to change here…
   // ↙️
-  function handleCheckApiStatus() {
+  async function handleCheckApiStatus() {
+    setStatusIcon("⌛️");
+
+    try {
+      const response = await fetch(apiStatusUrl);
+      const data = response.json();
+
+      if (response.ok) {
+        console.log("✅");
+        setStatusIcon("✅");
+        return data;
+      } else {
+        console.log("❌");
+        setStatusIcon("❌");
+      }
+    } catch (error) {
+      console.error("Failed to fetch the API status:", error);
+      setStatusIcon("🚨");
+    }
+
     /**
      * Hint 1:
      * Use the `fetch()` function and pass the `apiStatusUrl` into it
