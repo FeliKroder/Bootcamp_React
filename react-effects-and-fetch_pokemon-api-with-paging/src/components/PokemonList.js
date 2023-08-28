@@ -26,7 +26,7 @@ export default function PokemonList() {
     <main>
       <button
         type="button"
-        disabled={offset <= 0}
+        hidden={offset <= 0}
         onClick={() => setOffset(offset - 20)}
       >
         Previous Page
