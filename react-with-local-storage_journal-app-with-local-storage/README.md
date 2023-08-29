@@ -10,6 +10,8 @@ Install the [`use-local-storage-state`](https://github.com/astoilkov/use-local-s
 
 > 💡 Does it make sense to also put the `filter` state into local storage? What are the differences to the user experience?
 
+<!-- Yes, it makes sense. When viewing the Favorites and refreshing the page will stay on Favorites-side instead of switching back to "all" -->
+
 ## Development
 
 ### Local Development
