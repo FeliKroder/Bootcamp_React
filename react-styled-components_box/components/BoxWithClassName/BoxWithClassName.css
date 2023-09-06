@@ -1,8 +1,4 @@
 .box-with-classname {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  margin: 2rem;
 }
 
 .box-with-classname:hover {
